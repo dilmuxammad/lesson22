@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
+}
+.box{
+    margin-top: 20px;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.label__input:checked~.label__desc {
+    background-image: url("../img/shayba.jpg");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.label__desc {
+    border: 1px solid black;
+    padding: 0 8px;
+    border-radius: 3px;
+}
